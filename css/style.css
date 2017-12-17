@@ -69,36 +69,32 @@ fieldset, img{
 -----------------------------------*/
 .header{
   align-items: center;
-  background: url(../img/pw_maze_black_2X.png) left top repeat;
+  background: url(../img/background.jpg) left top repeat;
   display: flex;
   height: 100%;
   justify-content: center;
   text-align: center;
 }
 
-.logo{
-  margin: 0 auto 35px;
-  width: 130px;
-}
-
 .header h1{
-  color: #fff;
+  color: #303030;
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   font-weight: 400;
+  font-weight: bold;
   letter-spacing: -1px;
-  text-shadow: 2px 2px #222;
+  text-shadow: 2px 2px #dedede;
 }
 
 .header ul{
-  margin: 25px 0 45px;
+  margin: 5px 0 25px;
 }
 
 .header ul li{
-  color: #bcbcbc;
+  color: #505050;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   margin:0 5px 0 0;
   padding: 0 0 0 15px;
@@ -106,28 +102,33 @@ fieldset, img{
 }
 
 .link{
-  padding: 15px 35px;
-  background: #7cc576;
-  color: #fff !important;
+  background: #1f8080;
+  border-radius: 3px;
+  color: #f5f5f5 !important;
+  display: inline-block;
   font-size: 16px;
   font-weight: 400;
-  display: inline-block;
-  border-radius: 3px;
-  text-transform: uppercase;
   line-height: 25px;
+  padding: 15px 35px;
+  text-transform: uppercase;
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
 
 .link:hover{
-  color: #7cc576 !important;
-  background: #fff;
+  background: #dedede;
+  color: #ad866f !important;
 }
 
 .link:active, .link:focus{
-  background: #7cc576;
-  color: #fff !important;
+  background: #1f8080;
+  color: #f5f5f5 !important;
+}
+
+.logo{
+  margin: 0 auto;
+  width: 130px;
 }
 
 /* Navigation
