@@ -55,6 +55,7 @@ p{
 a, a:hover, a:active {
   text-decoration: none;
   outline: 0px !important;
+  cursor: pointer;
 }
 
 html, body{
