@@ -55,6 +55,7 @@ p{
 a, a:hover, a:active {
   text-decoration: none;
   outline: 0px !important;
+  cursor: pointer;
 }
 
 html, body{
@@ -118,7 +119,7 @@ fieldset, img{
 
 .link:hover{
   background: #dedede;
-  color: #ad866f !important;
+  color: #1f8080 !important;
 }
 
 .link:active, .link:focus{
