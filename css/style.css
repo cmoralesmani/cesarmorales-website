@@ -142,10 +142,15 @@ fieldset, img{
   background: #fff;
 }
 
+.main-nav-outer .container{
+  position: relative;
+  margin: 10px 0 0px;
+}
+
 .main-nav{
-  text-align: center;
-  margin: 0;
   list-style: none;
+  margin:0 55px;
+  text-align: center;
 }
 
 .main-nav li{
@@ -173,12 +178,12 @@ fieldset, img{
   display: inline-block;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10px;
 }
 
 /* Main section start
 ---------------------------------*/
-.main-section{
+.main-section, .portfolio, .about, .contact{
   position: relative;
   height: 100%;
   text-align: center;
@@ -193,9 +198,13 @@ fieldset, img{
 }
 
 .avatar img{
-  width: 500px;
+  width: 100px;
   border-radius: 50%;
 }
+
+/* Footer
+---------------------------------*/
+
 
 /* Animation Timers
 ---------------------------------*/
