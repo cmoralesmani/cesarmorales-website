@@ -184,13 +184,14 @@ fieldset, img{
 /* Main section start
 ---------------------------------*/
 .main-section, .portfolio, .about, .contact{
-  position: relative;
+  padding: 90px 0 110px;
+  /*position: relative;
   height: 100%;
   text-align: center;
   background: #eee;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 
 .avatar{
