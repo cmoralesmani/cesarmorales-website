@@ -12,7 +12,7 @@ $(window).on('load',function(){
     var $anchor = $(this);
     var $section = '.' + $anchor.attr('data-ref');
     $('html, body').stop().animate({
-      scrollTop: $($section).offset().top - 71
+      scrollTop: $($section).offset().top
     }, 1500,'easeInOutExpo');
 
     if($(window).width() < 768){
@@ -26,7 +26,7 @@ $(window).on('load',function(){
 // Scroll hacia la seccion a la que este indicada en data-ref de la etiqueta a
 $('a').click(function(e){
   var section = $(this).attr('data-ref');
-  
+
   if(section){
     section = '.' + section;
     e.preventDefault();
