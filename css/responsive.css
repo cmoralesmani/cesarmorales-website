@@ -34,7 +34,7 @@ Media Queries
   .header{ padding: 60px 0;}
   .header h1{ font-size: 28px; }
   .main-section { padding: 60px 0 70px; }
-  .main-nav{ display: none; position: absolute; left: 0; width: 100%;  margin: 0 auto; float: none; background: #f5f5f5; }
+  .main-nav{ display: none; position: absolute; left: 0; width: 100%;  margin: 55px auto; float: none; background: #f5f5f5 !important; }
   .main-nav li{ display: block; }
   .main-nav li a{ display: block; padding: 7px 32px; border-bottom: none; }
   .main-nav li a:hover{color: #7cc576; }
