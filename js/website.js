@@ -12,7 +12,7 @@ $(window).on('load',function(){
     var $anchor = $(this);
     var $section = '.' + $anchor.attr('data-ref');
     $('html, body').stop().animate({
-      scrollTop: $($section).offset().top
+      scrollTop: $($section).offset().top - 55
     }, 1500,'easeInOutExpo');
 
     if($(window).width() < 768){
@@ -29,9 +29,11 @@ $('a').click(function(e){
 
   if(section){
     section = '.' + section;
-    e.preventDefault();
+    console.log(section);
     $('html, body').animate({
       scrollTop: $(section).offset().top
     });
+
+    e.preventDefault();
   }
 });
