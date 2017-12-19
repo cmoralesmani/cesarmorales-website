@@ -125,18 +125,106 @@
     <!--about-start-->
     <div class="container">
       <h2>Quien soy?</h2>
-      <h6>Desarrollador apasionado por las nuevas tendencias tecnologicas.</h6>
+      <h6>Desarrollador de sistemas apasionado por las nuevas tendencias tecnologicas.</h6>
+      <div class="about-me-block clearfix">
+				<div class="about-me-box">
+					<div class="about-me">
+						<div class="about-me-shadow"><a data-ref="header"></a></div>
+						<img src="img/cm210x210.png" alt="">
+						<ul>
+							<li><a href="https://twitter.com/cmoralespro" class="fab fa-twitter"></a></li>
+							<li><a href="https://www.facebook.com/camd.jun" class="fab fa-facebook-f"></a></li>
+							<li><a href="https://plus.google.com/+CesarMorales080391" class="fab fa-google-plus-g"></a></li>
+						</ul>
+					</div>
+					<h3>Cesar Morales</h3>
+					<span>Full-Stack Developer</span>
+					<p>Fronted y Backend.</p>
+				</div>
+        <div class="about-content">
+          <p>
+            Nacido el 8 de Marzo de 1991.
+          </p>
+          <p>
+            <!-- <img class="titulo" src="img/titulo.png" alt="Titulo" /> -->
+            Graduado de la carrera de Ingenieria en Computacion, en la UNI (2008 - 2012).
+          </p>
+          <p>
+            Comence como educador en el area de las Tecnologias de la Informacion y Comunicacion.
+          </p>
+          <p>
+            Analista - Desarrollador de The Data Age
+          </p>
+          <p>
+            CCO de 200 Code
+          </p>
+        </div>
+			</div>
     </div>
   </section>
   <!--about-end-->
 
-  <section class="main-section contact">
+  <section class="business-talking">
+		<!--business-talking-start-->
+		<div class="container">
+			<h2>Hablemos de tu proyecto.</h2>
+		</div>
+	</section>
+	<!--business-talking-end-->
+
+  <div class="container">
     <!--contact-start-->
-    <div class="container">
-      <h2>Contacteme</h2>
-      <h6></h6>
-    </div>
-  </section>
+    <section class="main-section contact">
+      <div class="row">
+        <div class="col-lg-6 col-sm-7">
+          <div class="contact-info-box address clearfix">
+            <h3><i class="fas fa-map-marker-alt"></i>Direccion:</h3>
+            <span>Managua, Barrio Laureles Norte.<br />2DA Iglesia de Cristo, 100 mts. al Norte, 1 1/2 C. al Oeste.</span>
+          </div>
+          <div class="contact-info-box phone clearfix">
+            <h3><i class="fas fa-phone"></i>Telefono:</h3>
+            <span>(+505) 8916-2994</span>
+          </div>
+          <div class="contact-info-box email clearfix">
+            <h3><i class="fas fa-pencil-alt"></i>email:</h3>
+            <span>camd.jun@gmail.com</span>
+          </div>
+          <ul class="social-link">
+            <li class="twitter"><a href="https://twitter.com/cmoralespro"><i class="fab fa-twitter"></i></a></li>
+						<li class="facebook"><a href="https://www.facebook.com/camd.jun"><i class="fab fa-facebook-f"></i></a></li>
+						<!-- <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li> -->
+						<li class="gplus"><a href="https://plus.google.com/+CesarMorales080391"><i class="fab fa-google-plus-g"></i></a></li>
+						<!-- <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li> -->
+          </ul>
+        </div>
+        <div class="col-lg-6 col-sm-5">
+          <div class="form">
+            <div id="sendmessage">Tu mensaje ha sido enviado. Gracias!</div>
+            <div id="errormessage"></div>
+            <form class="contactForm" action="" method="post" role="form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control input-text" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control input-text" id="email" placeholder="Tu email" data-rule="email" data-msg="Por favor ingrese un email valido" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" class="form-control input-text" id="subject" placeholder="Asunto" data-rule="minlen:8" data-msg="Por favor ingrese al menos 8 caracteres" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea name="message" rows="5" class="form-control input-text text-area" data-rule="required" data-msg="Por favor escribe algo para enviar" placeholder="Mensaje"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit" class="input-btn">Enviar Mensaje</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <!--contact-end-->
 
   <footer class="footer">
@@ -153,5 +241,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="js/website.js"></script>
+  <script type="text/javascript" src="contactform/contactform.js"></script>
 </body>
 </html>
