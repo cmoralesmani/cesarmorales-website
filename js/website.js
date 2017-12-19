@@ -1,5 +1,9 @@
 $(document).ready(function(e){
   $('#navigation').scrollToFixed();
+  $('.res-nav_click').on('click',function(){
+    $('.main-nav').slideToggle();
+    return false;
+  });
 });
 
 // Cuando la pagina este completamente cargada incluido los graficos
@@ -10,6 +14,11 @@ $(window).on('load',function(){
     $('html, body').stop().animate({
       scrollTop: $($section).offset().top - 71
     }, 1500,'easeInOutExpo');
+
+    if($(window).width() < 768){
+      $('.main-nav').hide();
+    }
+
     event.preventDefault();
   });
 });
@@ -17,8 +26,9 @@ $(window).on('load',function(){
 // Scroll hacia la seccion a la que este indicada en data-ref de la etiqueta a
 $('a').click(function(e){
   var section = $(this).attr('data-ref');
-  section = '.' + section;
+  
   if(section){
+    section = '.' + section;
     e.preventDefault();
     $('html, body').animate({
       scrollTop: $(section).offset().top

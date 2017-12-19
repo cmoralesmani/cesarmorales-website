@@ -54,7 +54,7 @@ h6{
   font-family: 'Open Sans', sans-serif;
 	font-size:16px;
 	font-weight:400;
-	margin:0 0 40px 0;
+	margin:0 0 60px 0;
   text-align:center;
 }
 
@@ -140,6 +140,15 @@ p{
 
 /* Navigation
 ---------------------------------*/
+.logo-in-nav{
+  /*display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 10px;*/
+  float: left;
+  margin-left: 10px;
+}
+
 .main-nav-outer{
   padding: 0px;
   border-bottom: 1px solid #dddddd;
@@ -150,12 +159,13 @@ p{
 
 .main-nav-outer .container{
   position: relative;
-  margin: 10px 0 0px;
+  margin: 10px auto 0px;
 }
 
 .main-nav{
   list-style: none;
-  margin:0 55px;
+  overflow: hidden;
+  margin:0 auto;
   text-align: center;
 }
 
@@ -180,17 +190,29 @@ p{
   color: #7cc576;
 }
 
-.logo-in-nav{
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 10px;
+.res-nav_click{
+  line-height: 38px;
+  font-size: 38px;
+  text-decoration: none !important;
+  color: #777777;
+  font-style: normal;
+  display: none;
+  width: 42px;
+  height: 27px;
+  margin: 20px auto;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus{
+  color: #7cc576 !important;
 }
 
 /* Main section start - Services
 ---------------------------------*/
 .main-section{
-  padding: 40px 0 110px;
+  padding: 90px 0 110px;
 }
 
 .main-section.alabaster{
