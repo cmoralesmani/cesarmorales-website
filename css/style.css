@@ -274,106 +274,111 @@ p{
 .main-section.about h6{
 	margin-bottom:40px;
 }
-.about-me-block{
-	max-width:993px;
-	margin:0 auto;
-}
-.about-me-box{
-	width:210px;
-	height: 380px;
-	overflow: hidden;
-	text-align: center;
-	float: left;
-  margin-right: 30px;
-}
-.about-me-box span{
-	margin-bottom:24px;
-	display:block;
-}
-.about-me-box:nth-of-type(3n+0){ margin:0;}
 .about-me{
-	width:auto;
-	height:auto;
-	position:relative;
-	border-radius:50%;
-	box-shadow:0px 0px 0px 7px rgba(241,241,241,0.80);
-	margin:7px 7px 25px 7px;
-
+  display: flex;
+  justify-content: center;
+}
+.about-me .container{
+  margin-bottom: 25px;
+  max-width: 240px;
+  width: 100%;
+  text-align: center;
+}
+.about-me-avatar{
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 7px rgba(241,241,241,0.80);
+  display: block;
+	height: auto;
+  margin: 7px 7px 25px 7px;
+  position: relative;
+  width: auto;
+}
+.about-me-avatar img{
+  border-radius: 50%;
+	display: block;
+  width: 100%;
+}
+.about-me-avatar ul{
+	display: block;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  margin-top: -14px;
+	opacity: 0;
+  padding: 0;
+	position: absolute;
+  text-align: center;
+	top: 50%;
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+	width: 100%;
+	z-index: 15;
+}
+.about-me-avatar ul li{
+	display: inline;
+	margin: 0 11px;
+}
+.about-me-avatar ul li a{
+  color: #fff;
+	display: inline-block;
+	font-size:28px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.about-me-avatar ul li a:hover, .about-me-avatar ul li a:focus{
+	text-decoration: none;
+}
+.about-me-avatar ul li a.fa-twitter:hover{
+	color: #55acee;
+}
+.about-me-avatar ul li a.fa-facebook-f:hover{
+	color: #3b5998;
+}
+.about-me-avatar ul li a.fa-google-plus-g:hover{
+	color: #dd4b39;
+}
+.about-me-avatar:hover ul{
+  display: block;
+  opacity: 1
 }
 .about-me-shadow{
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-	border-radius:50%;
-	position:absolute;
-	width:100%;
-	height:100%;
-	z-index:10;
-	border-radius:50%;
+  border-radius: 50%;
+  height: 100%;
+  position:absolute;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	width: 100%;
+	z-index: 10;
 }
 .about-me-shadow a{
 	display:block;
+  height:100%;
 	width:100%;
-	height:100%;
 }
-.about-me:hover .about-me-shadow{
-	box-shadow:inset  0px 0px 0px 148px rgba(17,17,17,0.80);
+.about-me-avatar:hover .about-me-shadow{
+	box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,0.80);
 }
-.about-me:hover ul{ display:block; opacity:1}
-.about-me img{
-	display:block;
-	border-radius:50%;
+.about-content h6{
+  color: #222222;
 }
-.about-me ul{
-	display:block;
-	opacity:0;
-	padding:0;
-	margin:0;
-	list-style:none;
-	position:absolute;
-	left:0;
-	top:50%;
-	width:100%;
-	text-align:center;
-	margin-top:-14px;
-	z-index:15;
-	transition:all 0.6s ease-in-out;
-	-moz-transition:all 0.6s ease-in-out;
-	-webkit-transition:all 0.6s ease-in-out;
+.about-content ul{
+  /* line-height: 2em; */
+  padding: 0 0 1em;
+  list-style: none;
 }
-.about-me ul li{
-	display:inline;
-	margin:0 11px;
-}
-.about-me ul li a{
-	/*font-family: 'FontAwesome';*/
-	display:inline-block;
-	font-size:28px;
-	color:#fff;
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-}
-.about-me ul li a:hover, .about-me ul li a:focus{
-	text-decoration:none;
-}
-.about-me ul li a.fa-twitter:hover{
-	color:#55acee;
-}
-.about-me ul li a.fa-facebook-f:hover{
-	color:#3b5998;
-}
-.about-me ul li a.fa-google-plus-g:hover{
-	color:#dd4b39;
-}
-
-.about-content p{
-  padding: 10px 0;
+.about-content ul li::before{
+margin-right: 1em;
+color: #ad866f;
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f120";
+  /* font-family: "Font Awesome 5 Solid";   content: "\f0da"; */
 }
 .about-content .titulo{
-  width: 300px;
-  float: right;
   border-radius: 2em;
+  float: right;
+  width: 300px;
 }
 
 /* Talk Business
