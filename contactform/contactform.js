@@ -79,25 +79,23 @@ jQuery(document).ready(function($) {
         if( ferror ) return false;
         else var str = $(this).serialize();
         console.log(str);
-            // $.ajax({
-            //     type: "POST",
-            //     url: "contactform/contactform.php",
-            //     data: str,
-            //     success: function(msg){
-            //       console.log(msg);
-            //        // alert(msg);
-            //         if(msg == 'OK') {
-            //             $("#sendmessage").addClass("show");
-            //             $("#errormessage").removeClass("show");
-            //         }
-            //         else {
-            //             $("#sendmessage").removeClass("show");
-            //             $("#errormessage").addClass("show");
-            //             $('#errormessage').html(msg);
-            //         }
-            //
-            //     }
-            // });
+            $.ajax({
+                type: "POST",
+                url: "//localhost:5000/send_email",
+                data: str,
+                success: function(msg){
+                    if(msg == 'OK') {
+                        $("#sendmessage").addClass("show");
+                        $("#errormessage").removeClass("show");
+                    }
+                    else {
+                        $("#sendmessage").removeClass("show");
+                        $("#errormessage").addClass("show");
+                        $('#errormessage').html(msg);
+                    }
+
+                }
+            });
         return false;
     });
 
