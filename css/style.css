@@ -470,14 +470,11 @@ color: #ad866f;
 .facebook a:hover {
 	background: #3b5998;
 }
-.pinterest a:hover {
-	background: #cb2026;
-}
 .gplus a:hover {
 	background: #dd4b39;
 }
-.dribbble a:hover {
-	background: #ea4c89;
+.github a:hover {
+    background: #C627C4;
 }
 
 .form{
