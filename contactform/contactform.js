@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
         console.log(str);
             $.ajax({
                 type: "POST",
-                url: "//localhost:5000/send_email",
+                url: "https://cesarmorales-api.herokuapp.com/send_email",
                 data: str,
                 success: function(msg){
                     if(msg == 'OK') {
